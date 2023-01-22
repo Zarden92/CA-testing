@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <main>
+    <div class="contact-form">
+      
+        <h1 class="contact-header">Contact Us</h1>
+      
+        <form onsubmit="return validateForm()">
+
+        <div class="form-data">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <div class="error" id="nameError"></div>
+        </div>
+
+        <div class="form-data">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" minlength="10" />
+          <div class="error" id="subjectError"></div>
+        </div>
+
+        <div class="form-data">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="form-data">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" minlength="25"></textarea>
+          <div class="error" id="addressError"></div>
+        </div>
+
+        <input type="submit" value="Submit" class="form-button" />
+      </form>
+
+    </main>
+    </div>
+
+    <script src="contact-script.js"></script>
+  </body>
+
+</html>
